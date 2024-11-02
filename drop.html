@@ -1,0 +1,294 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Homepage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: #333;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .nav-links {
+            list-style: none;
+            display: flex;
+            margin-left: auto;
+            white-space: nowrap; /* Prevent line breaks */
+        }
+
+        .navbar .nav-links li {
+            margin-left: 15px;
+            position: relative;
+        }
+
+        .navbar .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block; /* Ensure clickable area */
+        }
+
+        .navbar .nav-links a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+
+        /* Dropdown Menu */
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        /* Show dropdown on hover */
+        .nav-links li:hover .dropdown-content {
+            display: block; /* Show dropdown on hover */
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #4A90E2;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+            margin-top: 50px; /* To avoid overlap with fixed navbar */
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero .btn-primary {
+            background: #fff;
+            color: #4A90E2;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Long Content Sections */
+        .long-section {
+            padding: 40px 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .long-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Additional Sections */
+        .additional-section {
+            height: 50px; /* Set a reasonable height */
+            background-color: #e2e2e2;
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+        }
+
+        /* Scrolling Text */
+        .scrolling-text {
+            background-color: #4A90E2;
+            color: #fff;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+            height: 40px; /* Height of the scrolling area */
+            font-size: 18px;
+        }
+
+        .scrolling-text p {
+            position: absolute;
+            width: 100%;
+            animation: scroll 30s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer .social-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .footer .social-links li {
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<header class="navbar">
+    <div class="container">
+        <nav>
+            <ul class="nav-links">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle">About</a>
+                    <div class="dropdown-content">
+                        <a href="#">About Us</a>
+                        <a href="#">Our Team</a>
+                        <a href="#">Our History</a>
+                        <a href="#">Our Vision</a>
+                        <a href="#">Our Mission</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle">Services</a>
+                    <div class="dropdown-content">
+                        <a href="#">Web Development</a>
+                        <a href="#">Graphic Design</a>
+                        <a href="#">SEO Services</a>
+                        <a href="#">Marketing</a>
+                        <a href="#">Consulting</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle">Contact</a>
+                    <div class="dropdown-content">
+                        <a href="#">Contact Us</a>
+                        <a href="#">Support</a>
+                        <a href="#">FAQs</a>
+                        <a href="#">Career</a>
+                        <a href="#">Press</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Scrolling Text -->
+<div class="scrolling-text">
+    <p>Welcome to my website! We offer web development, graphic design, and more. Stay tuned for updates!</p>
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1>Welcome to My Professional Website</h1>
+        <p>Your solution for professional web services</p>
+        <a href="#" class="btn-primary">Get Started</a>
+    </div>
+</section>
+
+<!-- Long Content Sections -->
+<section class="long-section">
+    <h2>Section 1</h2>
+    <p>Content for a long section goes here.</p>
+</section>
+
+<section class="long-section">
+    <h2>Section 2</h2>
+    <p>Additional long content for demonstration.</p>
+</section>
+
+<section class="long-section">
+    <h2>Section 3</h2>
+    <p>Even more long content to make the page lengthy.</p>
+</section>
+
+<section class="long-section">
+    <h2>Section 4</h2>
+    <p>This is yet another section to increase page length.</p>
+</section>
+
+<!-- Additional Sections -->
+<div class="additional-section">Additional Content 1</div>
+<div class="additional-section">Additional Content 2</div>
+<div class="additional-section">Additional Content 3</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 MyWebsite. All Rights Reserved.</p>
+        <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+        </ul>
+    </div>
+</footer>
+
+<script>
+    // JavaScript to toggle dropdown on hover
+    document.querySelectorAll('.dropdown-toggle').forEach(function(toggle) {
+        toggle.addEventListener('mouseover', function() {
+            const parentLi = this.parentElement;
+            parentLi.classList.add('active');
+        });
+        toggle.addEventListener('mouseout', function() {
+            const parentLi = this.parentElement;
+            parentLi.classList.remove('active');
+        });
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', function(event) {
+        const dropdowns = document.querySelectorAll('.dropdown-content');
+        dropdowns.forEach(function(dropdown) {
+            if (!dropdown.previousElementSibling.contains(event.target)) {
+                dropdown.style.display = 'none';
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
